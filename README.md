@@ -17,7 +17,7 @@ It should look like this:
 A key criteria for this exercise is how accurately I replicated the designs.
 I accessed the Figma file with all the information I needed at https://www.figma.com/file/jiLyWIuduQbsIPlQxTLYnC/Frontend-Testing-(Copy)?node-id=5530%3A0.
 
-I used plain CSS with styled components in React to accomplish this exercise.
+I used SCSS in React to accomplish this exercise.
 
 ## Functionality
 
