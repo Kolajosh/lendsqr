@@ -50,7 +50,6 @@
   color: #545F7D;
 }
 .nav button:nth-of-type(1), .nav button:last-of-type {
-  width: 24px;
   height: 24px;
   background: rgba(84, 95, 125, 0.0823529412);
   color: #545F7D;
