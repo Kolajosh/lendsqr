@@ -1,0 +1,54 @@
+.UserInfoContainer{
+    padding: 0px 30px;
+    margin: 30px 0px;
+    background: #FFFFFF;
+    box-shadow: 3px 5px 20px #0000000A;
+    border: 1px solid #213F7D0F;
+    border-radius: 4px;
+
+    .field {
+        color: #213F7D;
+        margin: 30px 25px;
+        
+        h2 {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(5, auto);
+            // justify-content: space-start;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin: 0px -25px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #213F7D1A;
+            
+            &:nth-of-type(2) {
+                border-top: 1px solid #213F7D1A;
+            }
+
+            .col {
+                margin: 0px 25px;
+                margin-top: 30px;
+
+                h3 {
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                p {
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+            }
+        }
+
+        &:last-of-type {
+            .row {
+                border-bottom: none;
+            }
+        }
+    }
+}

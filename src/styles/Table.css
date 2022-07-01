@@ -1,0 +1,52 @@
+.TableContainer .table_responsive {
+  background: #FFFFFF;
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.0392156863);
+  border: 1px solid rgba(33, 63, 125, 0.0588235294);
+  border-radius: 4px;
+  padding: 30px;
+  overflow-x: auto;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+.TableContainer .table_responsive::-webkit-scrollbar {
+  height: 6px;
+  border-radius: 8px;
+  background: rgba(57, 205, 204, 0.062745098);
+}
+.TableContainer .table_responsive::-webkit-scroll-thumb {
+  border-radius: 8px;
+  background: #213F7D;
+  border: 1px solid black;
+}
+.TableContainer .table_responsive table {
+  border-collapse: collapse;
+  color: #545F7D;
+  z-index: 1;
+  width: 100%;
+}
+
+.Loader {
+  width: 100%;
+  min-height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Loader svg {
+  width: 80px;
+  height: 80px;
+  color: #545F7D;
+  -webkit-animation: rotate 2s linear infinite;
+          animation: rotate 2s linear infinite;
+}
+@-webkit-keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=Table.css.map */

@@ -1,0 +1,50 @@
+.TableContainer{
+    .table_responsive {
+        background: #FFFFFF;
+        box-shadow: 3px 5px 20px #0000000A;
+        border: 1px solid #213F7D0F;
+        border-radius: 4px;
+        padding: 30px;
+        overflow-x: auto;
+        height: max-content;
+
+        &::-webkit-scrollbar {
+            height: 6px;
+            border-radius: 8px;
+            background: #39CDCC10;
+        }
+        &::-webkit-scroll-thumb {
+            border-radius: 8px;
+            background: #213F7D;
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            color: #545F7D;
+            z-index: 1;
+            width: 100%;
+        }
+    }
+}
+
+.Loader{
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 80px;
+        height: 80px;
+        color: #545F7D;
+        animation: rotate 2s linear infinite;
+
+        @keyframes rotate {
+            100% {
+              transform: rotate(360deg);
+            }
+        }
+    }
+}

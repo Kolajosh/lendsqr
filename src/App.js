@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./layout/Navbar";
+import Sidebar from "./layout/Sidebar";
+
+import PagesRoutes from "./routes/Routes";
 
 function App() {
+  const route = document.location.pathname;
+  const [openSidebar, setOpenSidebar] = useState(false);
+
+  const toggleSidebar = (e) => {
+    e.preventDefault();
+    setOpenSidebar(!openSidebar);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router>
+        {route !== "/" && (
+          <Navbar toggleSidebar={toggleSidebar} openSidebar={openSidebar} />
+        )}
+        {route !== "/" && <Sidebar route={route} openSidebar={openSidebar} />}
+        <PagesRoutes />
+      </Router>
+    </>
   );
 }
 
