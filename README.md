@@ -1,3 +1,45 @@
+# Lendsqr Assessment
+
+This is an implementation of an assessment to demonstrate my reactjs and scss skills.
+
+The design was gotten from here:
+https://www.figma.com/file/XWksVnULi4Xpvu8xlDPuA4/Frontend-Testing-(Copy)?node-id=5530%3A0
+
+The task is to create a page which lists all the users from a JSON file of 500 records, and read each user details on demand.
+It should look like this:
+
+![Login](https://i.postimg.cc/k4FRRD6Z/image.png)
+![UsersPage](https://i.postimg.cc/QtbVxPvZ/image.png)
+![User Detail](https://i.postimg.cc/05VrTTpp/image.png)
+
+## Styling
+
+A key criteria for this exercise is how accurately I replicated the designs.
+I accessed the Figma file with all the information I needed at https://www.figma.com/file/jiLyWIuduQbsIPlQxTLYnC/Frontend-Testing-(Copy)?node-id=5530%3A0.
+
+I used plain CSS with styled components in React to accomplish this exercise.
+
+## Functionality
+
+The functionality was implemented using React.
+Ideally, I supposed to use TypeScript, but JavaScript is fine too.
+
+The areas that are implemented are:
+
+- Login:
+  - Clicking the login button navigates to the `/users` route.
+  - There were no backend functionality provided, so email and password authentication were not functional
+- Users listing:
+  - 500 records of users were fetched from a JSON data.
+- Pagination:
+  - Pagination was implemented.
+  - Only the set amount of record to show per page was visible, this was achieved by slicing the array of users per the set amount of users to be displayed on the table.
+  - I also implemented ppages navigation on the table.
+- User Details
+  - For a selected/single user, when the `View Details` button is clicked, a new page is navigated to that reveals more information about that user.
+
+Other notes:
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
