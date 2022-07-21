@@ -5,6 +5,8 @@
     box-shadow: 3px 5px 20px #0000000A;
     border: 1px solid #213F7D0F;
     border-radius: 4px;
+    overflow-x: auto;
+
 
     .field {
         color: #213F7D;
@@ -27,6 +29,10 @@
             
             &:nth-of-type(2) {
                 border-top: 1px solid #213F7D1A;
+            }
+
+            @media(max-width: 375px) {
+                grid-template-columns: repeat(3, auto);
             }
 
             .col {

@@ -27,6 +27,10 @@
             max-width: unset;
             min-width: 100%;
         }
+        @media(max-width: 577px) {
+            height: 150px;
+            width: 150px;
+        }
 
         span {
             width: 40px;
@@ -39,19 +43,29 @@
             svg {
                 width: 15px;
                 height: 15px;
+                @media(max-width: 577px) {
+                    width: 12px;
+                    height: 12px;
+                }
             }
         }
 
         p {
             color: #545F7D;
             font-size: 14px;
+            @media(max-width: 577px) {
+                font-size: 12px;
+            }
         }
 
         h2 {
             color: #213F7D;
             font-weight: 600;
             font-size: 24px;
+            @media(max-width: 577px) {
+                font-size: 12px;
+            }
         }
     }
- 
+    
 }
